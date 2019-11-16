@@ -48,7 +48,7 @@ while True:
 
     # Exit condition
     if id_unstripped.lower() in ('exit'):
-        print ('Saliendo...')
+        print ('Shutting down...')
         break
 
     # Check for Twitter domain or non-numeric characters in input
