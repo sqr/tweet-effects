@@ -1,3 +1,4 @@
+![Tweet Effects](https://i.imgur.com/cPA6Ez1.png "Tweet Effects")
 # Tweet Effects
 The aim of this project is to download tweet data for bulk processing in After Effects, auto generating and populating compositions. It is divided in two parts:
 * **tweet_effects.py**: Python program that prompts the user to input the URL of a tweet. It then downloads its data to a JSON file, as well as the avatar of the user that posted the tweet to a JPEG file. Both files are downloaded. 
