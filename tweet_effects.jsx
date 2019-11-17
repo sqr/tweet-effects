@@ -51,6 +51,14 @@
 				}
 			}
 		}
+		
+		function getPicByName(picName) {  // Given a footage item name, returns the item index in the project
+			for (var i = 1; i <= myProject.numItems; i++) {
+				if ((myProject.item(i) instanceof FootageItem) && (myProject.item(i).name == picName)){
+					return myProject.item(i);				   
+				}
+			}
+		}
 
         function createFolder() {
 			app.project.items.addFolder(tweetFolder); // Create root folder for the tweets 
