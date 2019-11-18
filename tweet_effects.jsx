@@ -55,7 +55,6 @@
 		function getPicByName(picName) {  // Given a footage item name, returns the item index in the project
 			for (var i = 1; i <= myProject.numItems; i++) {
 				if ((myProject.item(i) instanceof FootageItem) && (myProject.item(i).name == picName)){
-					alert(myProject.item(i).name);
 					return myProject.item(i);				   
 				}
 			}
@@ -126,7 +125,7 @@
 				myProject.item(u).parentFolder = carpetaComps; // Set the parent folder of that comp
 
 				/* Alternative way of trying to solve it by using two different functions, leaving for future reference 
-				
+
 				var avatarLayer = getAvatarLayer(myProject.item(u).name, myProject.item(u));
 				var avatarItem = getPicByName(myProject.item(u).name+".jpg");
 				myProject.item(1).layer(3).replaceSource (myProject.item(27), false); */
