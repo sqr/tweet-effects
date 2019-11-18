@@ -55,6 +55,7 @@
 		function getPicByName(picName) {  // Given a footage item name, returns the item index in the project
 			for (var i = 1; i <= myProject.numItems; i++) {
 				if ((myProject.item(i) instanceof FootageItem) && (myProject.item(i).name == picName)){
+					alert(myProject.item(i).name);
 					return myProject.item(i);				   
 				}
 			}
@@ -102,12 +103,35 @@
         myProject.items.addFolder(compFolder); // Create the folder that will hold all the compositions
         var carpetaComps = getFolderByName(compFolder); // Get its item index
 
-        for (var i=1; i < myProject.numItems; i++) { // Loop through all the project items
-            if ((myProject.item(i) instanceof CompItem) && (arraysCarpeta.indexOf(myProject.item(i).name) !== -1)){ // If we find a comp that has the same name as one of the items of the array
-                myProject.item(i).parentFolder = carpetaComps; // Set the parent folder of that comp
-            } 
-        }
+		/* Unused function, for the alternative way of trying to solve it without nested loops
 
+		function getAvatarLayer(avatar, comp) { 
+			var avatar = "00_template.jpg";
+			for (var i = 1; i <= comp.numLayers; i++) {
+				if (comp.layer(i).name == avatar){
+					return comp.layer(i);
+				}
+			}
+		}
+		*/
+
+        for (var u=1; u < myProject.numItems; u++) { // Loop through all the project items
+            if ((myProject.item(u) instanceof CompItem) && (arraysCarpeta.indexOf(myProject.item(u).name) !== -1)){ // If we find a comp that has the same name as one of the items of the array
+				for (var k=1; k < myProject.item(u).numLayers; k++) { // Loop through layers
+					if (myProject.item(u).layer(k).name == "00_template.jpg") { // Look for the template image
+						var avatarItem = getPicByName(myProject.item(u).name+".jpg"); // Fetch the corresponding avatar item to replace
+						myProject.item(u).layer(k).replaceSource (avatarItem, false); // Replace 
+					}
+				}	
+				myProject.item(u).parentFolder = carpetaComps; // Set the parent folder of that comp
+
+				/* Alternative way of trying to solve it by using two different functions, leaving for future reference 
+				
+				var avatarLayer = getAvatarLayer(myProject.item(u).name, myProject.item(u));
+				var avatarItem = getPicByName(myProject.item(u).name+".jpg");
+				myProject.item(1).layer(3).replaceSource (myProject.item(27), false); */
+            } 
+		}
 	}
 
 	TweetEffects();
