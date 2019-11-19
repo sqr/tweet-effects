@@ -6,11 +6,11 @@ import re
 import io
 from PIL import Image
 
-consumer_key="dOzgQ3boLIH9K8vhDdEVThdMo"
-consumer_secret="oTotX2BjF0xGerwYINn1FLQUW4Flti7DjqwPjQJYfkZOrlrnFZ"
+consumer_key="CHANGE_ME"
+consumer_secret="CHANGE_ME"
 
-access_token="9971802-2oZAQGS1uw398BhPbM9iJAKKVHxaur3GJz5E1ZckeL"
-access_token_secret="nSRl92TTaT6UCRL6Xw4l2sVJAtfBVHxFEX7RzjIqiqUk1"
+access_token="CHANGE_ME"
+access_token_secret="CHANGE_ME"
 
 # Twitter authorization
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
