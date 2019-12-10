@@ -8,7 +8,7 @@ The aim of this project is to download tweet data for bulk processing in After E
 Please note this is a work in progress project still in it's early stages.
 
 # Setup
-* Download the files tweet_effects.py, tweet_effects.jsx and tweet_ae.aep, put them all in the same directory.
+* Download the files **tweet_effects.py**, **tweet_effects.jsx** and **tweet_ae.aep**, put them all in the same directory.
 * Edit **tweet_effects.py**, adding your Twitter API credentials (lines 9 to 13).
 * Run **tweet_effects.py**, you will be greeted by a menu that explains how the program works. You can then proceed to enter tweets, in the form of the full URL or ID (e.g. "https://twitter.com/JacobWolf/status/1204151919071113219" or "1204151919071113219").
 * This will create a folder called "tweets" in your working directory, with a subfolder named as the tweet ID. Inside it you will find a JSON file and the .JPG avatar of the user that posted the tweet.
