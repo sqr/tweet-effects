@@ -14,7 +14,7 @@ Please note this is a work in progress project still in it's early stages.
 * This will create a folder called "tweets" in your working directory, with a subfolder named as the tweet ID. Inside it you will find a JSON file and the .JPG avatar of the user that posted the tweet.
 * Repeat last step as many times as you want!
 
-* Open **tweet_ae.aep** with After Effects 2020 and and run the script tweet_effects.jsx. If you need a downgraded version of the After Effects project let me know.
+* Open **tweet_ae.aep** with After Effects 2020 and and run the script **tweet_effects.jsx**. If you need a downgraded version of the After Effects project let me know.
 * The script will look for a folder called "tweets" in the same directory as **tweet_ae.aep**, import the JSON files, pictures and folder structure, as well as creating a new composition for each tweet. These compositions will be autopopulated with the correct tweet status text, username and user profile picture. 
 
 # Config
