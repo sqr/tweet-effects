@@ -9,16 +9,16 @@ Please note this is a work in progress project still in it's early stages.
 
 # Setup
 * Download the files tweet_effects.py, tweet_effects.jsx and tweet_ae.aep, put them all in the same directory.
-* Edit tweet_effects.py, adding your Twitter API credentials (lines 9 to 13).
-* Run tweet_effects.py, you will be greeted by a menu that explains how the program works. You can then proceed to enter tweets, in the form of the full URL or ID (e.g. "https://twitter.com/JacobWolf/status/1204151919071113219" or "1204151919071113219").
+* Edit **tweet_effects.py**, adding your Twitter API credentials (lines 9 to 13).
+* Run **tweet_effects.py**, you will be greeted by a menu that explains how the program works. You can then proceed to enter tweets, in the form of the full URL or ID (e.g. "https://twitter.com/JacobWolf/status/1204151919071113219" or "1204151919071113219").
 * This will create a folder called "tweets" in your working directory, with a subfolder named as the tweet ID. Inside it you will find a JSON file and the .JPG avatar of the user that posted the tweet.
 * Repeat last step as many times as you want!
 
-* Open tweet_ae.aep with After Effects 2020 and and run the script tweet_effects.jsx. If you need a downgraded version of the after effects project let me know.
-* The script will look for a folder called "tweets" in the same directory as tweet_ae.aep, import the JSON files, pictures and folder structure, as well as creating a new composition for each tweet. These compositions should be populated with the correct tweet status text, username and user profile picture. 
+* Open **tweet_ae.aep** with After Effects 2020 and and run the script tweet_effects.jsx. If you need a downgraded version of the After Effects project let me know.
+* The script will look for a folder called "tweets" in the same directory as **tweet_ae.aep**, import the JSON files, pictures and folder structure, as well as creating a new composition for each tweet. These compositions will be autopopulated with the correct tweet status text, username and user profile picture. 
 
 # Config
-* You can edit the "template" composition in tweet_ae.aep before running tweet_effects.jsx, so the final result matches your required visual style.
+* You can edit the "template" composition in **tweet_ae.aep** before running **tweet_effects.jsx**, so the final result matches your required visual style.
 
 # FAQ
 Feel free to ask any questions and they will be added to the FAQ. Thanks!
