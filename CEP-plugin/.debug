@@ -1,0 +1,11 @@
+    <ExtensionList>
+        <!-- 1 -->
+        <Extension Id="com.my.test.panel">
+           <HostList>
+
+               <!-- 2 -->
+               <Host Name="AEFT" Port="8088"/>
+
+            </HostList>
+        </Extension>
+    </ExtensionList>    
